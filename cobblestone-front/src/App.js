@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import waves from './waves.svg'
 
 import './App.css';
@@ -18,7 +17,7 @@ function App() {
     <Grilla rand_button={rand} dimensions={dimensions}></Grilla>
 
   </Grid>
-    <img src={waves} width={'100%'}  style={{display:'block' ,bottom: -10}}/>
+    <img src={waves} width={'100%'} alt={'oad'} style={{display:'block' ,bottom: -10}}/>
   </>
 }
 

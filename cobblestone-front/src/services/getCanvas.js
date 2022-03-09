@@ -21,11 +21,4 @@ const getSize = (num) =>{
 	return promise
 }
 
-const getSizePosition = (num, x,y) =>{
-	const promise = axios(`${baseURL}/${num}/${x}/${y}`, {
-		method: 'GET',
-	})
-	return promise
-}
-
-export {getDefaultData, getSize, getSizePosition}
+export {getDefaultData, getSize}

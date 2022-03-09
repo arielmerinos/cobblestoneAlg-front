@@ -2,13 +2,12 @@ import logo from './logo.svg';
 
 import './App.css';
 import {Grid} from '@adobe/react-spectrum'
-import {getDefaultData, getSizePosition, getSize} from "./services/getCanvas";
+import {getDefaultData, getSize} from "./services/getCanvas";
 import {useEffect, useState} from "react";
 import {repeat} from "@react-spectrum/layout";
 
 
 function Grilla({rand_button, dimensions}) {
-	const [data, setData] = useState({});
 	const [canvas, setCanvas] = useState([]);
 	const [size, setSize] = useState(8);
 
@@ -18,7 +17,6 @@ function Grilla({rand_button, dimensions}) {
 			res => {
 				const data = res.data
 				if (data){
-					setData(data)
 					setSize(data.size_canvas)
 					setCanvas(data.lista)
 				}
@@ -31,7 +29,6 @@ function Grilla({rand_button, dimensions}) {
 			res =>{
 				const data = res.data
 				if (data){
-					setData(data)
 					setSize(data.size_canvas)
 					setCanvas(data.lista)
 				}
@@ -40,10 +37,6 @@ function Grilla({rand_button, dimensions}) {
 	} , [rand_button])
 
 
-	useEffect(() => {
-		console.log(size)
-		console.log(canvas)
-	}, [size])
 
 	const getMinimum = () =>{
 		return Math.min(window.innerWidth, window.innerHeight -250)
