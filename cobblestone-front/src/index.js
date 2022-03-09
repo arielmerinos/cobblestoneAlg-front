@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './fonts/Gilroy-ExtraBold.otf';
+import './fonts/Gilroy-Light.otf';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
