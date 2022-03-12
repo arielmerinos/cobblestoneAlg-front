@@ -38,12 +38,10 @@ function App() {
             setCanvas(data.lista)
             setCoordX(data.init_coords.x)
             setCoordY(data.init_coords.y)
-            console.log(`this is canvas ${canvas}`)
           }
         }
     )
   } , [rand])
-  console.log(`Esto es size ${size}`)
 
 
   const howMuchCols = () => {

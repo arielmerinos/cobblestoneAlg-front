@@ -6,13 +6,13 @@ import {InfoContainer, InfoSize, InfoSpecial, InfoSizeContainer, InfoSpecialCont
 const Info = ({size, coordx, coordy}) =>{
 return <InfoContainer>
 	<InfoSizeContainer >
-		<img src={sizeimg} />
+		<img src={sizeimg} alt={'.'} />
 		<InfoSize>
 			{size} x {size}
 		</InfoSize>
 	</InfoSizeContainer>
 	<InfoSpecialContainer>
-		<img src={special}/>
+		<img src={special} alt={'.'}/>
 		<InfoSpecial> ( {coordy+1},  {size -coordx})</InfoSpecial>
 	</InfoSpecialContainer>
 </InfoContainer>
