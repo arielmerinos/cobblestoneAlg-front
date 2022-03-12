@@ -44,20 +44,15 @@ function App() {
     <Grid
         columns={repeat(howMuchCols(), sizeOfCols())}
         marginTop={'3rem'}
-        justifyContent="center" >
+        justifyContent="center" />
       <InteractiveSide
           rand_button={setRand}
-          set_dimensions={set_dimensions}>
-      </InteractiveSide>
+          set_dimensions={set_dimensions}/>
       <Grilla
           rand_button={rand}
           dimensions={dimensions}
-          margin={calculeGridMargin()}>
-      </Grilla>
-
-    </Grid>
-    <Waves>
-    </Waves>
+          margin={calculeGridMargin()}/>
+    <Waves/>
   </>
 }
 

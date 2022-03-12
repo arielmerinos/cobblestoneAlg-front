@@ -43,7 +43,7 @@ function Grilla({rand_button, dimensions, margin}) {
 			width={"90%"}
 			maxWidth={"800px"}
 		>
-			{canvas.map((list) => <> {individualSquares(list, size, margin)} </>) }
+			{canvas.map((list) => <> {individualSquares(list)} </>) }
 		</Grid>
 	</GridContainer>
 }
