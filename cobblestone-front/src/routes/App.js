@@ -22,15 +22,6 @@ function App() {
     return 250
   }
 
-  const sizeOfCols = () =>{
-    if(window.innerWidth > 988){
-      return (window.innerWidth / 2) - 80
-    }
-    else {
-      return window.innerWidth - 30
-    }
-  }
-
   const howMuchCols = () => {
     if (window.innerWidth < 988){
       return 1
@@ -42,10 +33,13 @@ function App() {
 
   return <>
     <Grid
-        columns={repeat(howMuchCols(), sizeOfCols())}
+        columns={repeat(howMuchCols(), '1fr')}
         marginTop={'3rem'}
         marginBottom={'3rem'}
-        justifyContent="center" >
+        justifyContent="center"
+        maxWidth={'2000px'}
+        margin={' 0 auto'}
+    >
       <InteractiveSide
           rand_button={setRand}
           set_dimensions={set_dimensions}/>

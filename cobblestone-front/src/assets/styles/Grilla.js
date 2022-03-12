@@ -10,4 +10,7 @@ export const GridContainer = styled.div`
 	@media(max-width: 948px){
 		max-width: 90%;
 	}
+	@media(max-width: 650px){
+		max-height: 40vh;
+	}
 `

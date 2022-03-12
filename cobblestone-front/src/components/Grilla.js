@@ -42,6 +42,8 @@ function Grilla({rand_button, dimensions, margin}) {
 			justifyContent="center"
 			width={"90%"}
 			maxWidth={"800px"}
+			marginBottom={'2rem'}
+			marginTop={'2rem'}
 		>
 			{canvas.map((list) => <> {individualSquares(list)} </>) }
 		</Grid>

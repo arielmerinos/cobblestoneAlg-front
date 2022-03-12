@@ -10,6 +10,7 @@ export const Interactive = styled.div`
 	    margin-top: 5em;
 	    height: auto;
 	    justify-content: center;
+	    align-items:center;
     }
 `
 
@@ -31,6 +32,16 @@ export const Button = styled.button`
 	}
 	&:active{
 		background: linear-gradient(90deg, #31B3F2 0%, #ED20A8 100%);
+	}
+`
+
+export const Buttons = styled.div`
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	@media(max-width: 380px){
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 `
 
