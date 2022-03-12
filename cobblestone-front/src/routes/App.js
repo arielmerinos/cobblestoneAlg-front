@@ -43,6 +43,7 @@ function App() {
   return <>
     <Grid
         columns={repeat(howMuchCols(), sizeOfCols())}
+        marginTop={'3rem'}
         justifyContent="center" >
       <InteractiveSide
           rand_button={setRand}

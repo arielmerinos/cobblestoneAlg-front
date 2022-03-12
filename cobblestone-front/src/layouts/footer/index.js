@@ -7,7 +7,7 @@ const Image = styled.img`
 	display: block;
 	bottom: -10px;
 	@media(max-width: 948px){
-	display: none;
+		display: block;
 	}
 `
 

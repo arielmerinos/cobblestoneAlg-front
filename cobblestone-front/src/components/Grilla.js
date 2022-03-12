@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {repeat} from "@react-spectrum/layout";
 import {Grid} from '@adobe/react-spectrum'
-import {getMinimum} from "../services/utils/minimum";
 import {getDefaultData, getSize} from "../services/get-api";
 import {GridContainer} from "../assets/styles/Grilla";
 import '../assets/styles/App.css';
@@ -11,7 +10,6 @@ import {individualSquares} from "./IndividualSquare";
 function Grilla({rand_button, dimensions, margin}) {
 	const [canvas, setCanvas] = useState([]);
 	const [size, setSize] = useState(8);
-
 
 	useEffect(()=>{
 		getSize(dimensions).then(
@@ -40,9 +38,10 @@ function Grilla({rand_button, dimensions, margin}) {
 
 	return <GridContainer >
 		<Grid
-			columns={repeat(size, getMinimum(margin) / size)}
-			rows={repeat(size, getMinimum(margin) / size)}
+			columns={repeat(size, '1fr')}
 			justifyContent="center"
+			width={"90%"}
+			maxWidth={"800px"}
 		>
 			{canvas.map((list) => <> {individualSquares(list, size, margin)} </>) }
 		</Grid>

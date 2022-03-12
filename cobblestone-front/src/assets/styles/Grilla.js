@@ -8,6 +8,6 @@ export const GridContainer = styled.div`
 	justify-content: center;
 	height: 80vh;
 	@media(max-width: 948px){
-	max-width: 90%;
+		max-width: 90%;
 	}
 `
